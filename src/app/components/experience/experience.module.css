@@ -1,0 +1,107 @@
+.md{
+    @apply flex flex-col justify-center items-center w-full flex-wrap mt-10;
+}
+.exp{
+    @apply text-3xl text-blue-600;
+}
+.where{
+    @apply text-4xl mt-6;
+}
+.container1{
+    @apply flex flex-col items-center justify-center cursor-pointer;
+}
+.container2{
+    @apply flex flex-row items-center w-full justify-start mt-6 text-start;
+}
+.image{
+    @apply h-32 w-32 self-start;
+}
+.arrow{
+    @apply align-bottom ml-12 text-3xl;
+}
+.line{
+    @apply border-blue-400 border-2 w-[100%] rounded-2xl mb-4 shadow-2xl
+}
+.place{
+    @apply text-3xl ml-4;
+}
+
+@media (max-width:1565px) {
+
+    .arrow{
+        @apply align-bottom ml-6 text-3xl;
+    }
+
+}
+
+@media (max-width:1235px) {
+
+    .arrow{
+        @apply align-bottom ml-3 text-2xl;
+    }
+    .container2{
+        @apply flex flex-row items-center w-full justify-start ml-0 mt-6 text-start;
+    }
+
+}
+@media (max-width:877px) {
+
+    .arrow{
+        @apply align-bottom ml-3 text-2xl;
+    }
+    .container2{
+        @apply flex flex-row items-center w-full justify-start ml-0 mt-6 text-start;
+    }
+    
+   
+}
+
+@media (max-width:544px) {
+    .place{
+        @apply text-2xl ml-4;
+    }
+    .image{
+        @apply h-24 w-24 self-start;
+    }
+    .exp{
+        @apply text-2xl;
+    }
+    .where{
+        @apply text-2xl mt-6;
+    }
+}
+
+@media (max-width:349px) {
+    .place{
+        @apply text-xl ml-4;
+    }
+    .image{
+        @apply h-20 w-20 self-start;
+    }
+    .exp{
+        @apply text-2xl;
+    }
+    .where{
+        @apply text-xl mt-6;
+    }
+}
+
+@media (max-width:300px) {
+    .arrow{
+        @apply hidden;
+    }
+}
+@media (max-width:260px) {
+    .place{
+        @apply text-lg ml-4;
+    }
+    .image{
+        @apply h-16 w-16 self-start;
+    }
+    .exp{
+        @apply text-xl;
+    }
+    .where{
+        @apply text-lg mt-6;
+    }
+}

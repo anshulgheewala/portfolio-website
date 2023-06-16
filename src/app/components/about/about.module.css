@@ -1,0 +1,107 @@
+.maindiv{
+
+    @apply flex flex-row m-4 flex-wrap;
+
+}
+.imgdiv{
+    @apply w-auto  flex-1 flex-wrap
+}
+.textdiv{
+    @apply flex flex-col justify-start p-12 flex-1
+}
+.aboutmetext{
+    @apply text-black text-4xl mt-6 h-fit;
+}
+
+
+@media (max-width:958px) {
+
+    .imgdiv > svg{
+        @apply w-72 h-72;
+    }
+
+    .imgdiv{
+        @apply w-auto  flex flex-1 flex-wrap  items-center;
+    }
+
+    .textdiv{
+        @apply w-60 mt-0 p-0;
+    }
+
+
+    
+}
+@media (max-width:655px) {
+
+    .maindiv{
+
+        @apply flex flex-col m-4 flex-wrap justify-center items-center; 
+    
+    }
+
+    .textdiv{
+        @apply w-full mt-4 p-0 text-center text-justify;
+    }
+
+    /* .imgdiv{
+      @apply justify-center items-center;
+    } */
+    
+}
+
+
+@media (max-width:540px) {
+
+    .imgdiv > svg{
+        @apply w-80 h-80;
+    }
+
+    .textdiv{
+        @apply mt-0 p-0 w-full;
+    }
+
+    @media (max-width:399px) {
+
+        .textdiv > h1{
+            @apply  text-black text-3xl mt-3 h-fit;
+        }
+    
+    
+        
+    }
+
+
+    
+}
+@media (max-width:345px) {
+
+    .imgdiv > svg{
+        @apply w-52 h-52;
+    }
+    .textdiv >h1{
+        @apply text-black text-2xl mt-3 h-fit;
+    }
+    .textdiv > span{
+        @apply text-blue-600 text-xl
+    }
+    .textdiv >p{
+        @apply mt-6 text-xl
+    }
+
+    
+}
+
+@media(max-width:232px){
+    .textdiv >p{
+        @apply mt-6 text-sm
+    }
+}
+@media (max-width:225px) {
+
+    .imgdiv > svg{
+        @apply w-36 h-36;
+    }
+  
+
+    
+}

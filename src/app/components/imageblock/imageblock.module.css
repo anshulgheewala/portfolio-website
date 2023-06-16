@@ -1,0 +1,150 @@
+.maindiv{
+    @apply flex flex-col bg-gradient-to-r from-black to-blue-500 p-4 flex-wrap mt-14;
+}
+.image{
+    @apply h-96 w-96 rounded-full border-2 border-black mr-1 object-cover self-end aspect-4/3;
+}
+.nameline{
+    @apply h-auto text-2xl ;
+}
+.name{
+    @apply text-4xl text-blue-600;
+}
+.line{
+    @apply mt-12 text-4xl;
+}
+.typer{
+    @apply text-6xl mt-12 text-blue-600;
+}
+.buttondiv{
+    @apply flex flex-row space-x-8 flex-wrap;
+}
+.textdiv{
+    @apply flex flex-wrap flex-col;
+}
+
+@media (max-width:800px) {
+
+    .image{
+        @apply h-56 w-56 rounded-full border-2 border-black mr-1 object-cover aspect-4/3;
+    }    
+    .nameline{
+        @apply h-auto text-xl
+    }
+    .name{
+        @apply text-blue-600 text-xl;
+    }
+    .line{
+        @apply mt-8 text-xl;
+    }
+    .typer{
+        @apply text-xl mt-8 text-blue-600 ;
+    }
+
+}
+
+@media (max-width:520px) {
+
+    .image{
+        @apply h-28 w-28 rounded-full border-2 border-black mr-1 object-cover aspect-4/3 self-start;
+    } 
+    .buttondiv > button{
+        @apply mt-4;
+    }
+
+    .buttondiv >:link{
+        @apply mt-4
+    }
+    
+
+
+    
+}
+@media (max-width:400px) {
+
+   
+    .buttondiv{
+        @apply flex flex-col space-x-0 m-6 flex-grow justify-center items-center space-y-8 flex-wrap;
+    }
+
+    .typer{
+        @apply text-xl mt-8 text-blue-600 block w-full;    ;
+    }
+
+    .buttondiv > button{
+        @apply mt-4;
+    }
+
+    
+    
+
+
+    
+}
+@media (max-width:310px){
+    .image{
+        @apply h-24 w-24;
+    }
+}
+@media (max-width:238px) {
+    .maindiv{
+        @apply mt-0;
+    }
+}
+
+@media (max-width:310px){
+    .image{
+        @apply h-14 w-14;
+    }
+}
+@media (max-width:220px){
+    .image{
+        @apply hidden;
+    }
+    .buttondiv > button{
+        @apply w-20 text-xs mt-3 text-justify;
+    }
+    .buttondiv >:link{
+        @apply w-20 text-xs mt-3 text-justify;
+    }
+    .nameline{
+        @apply h-auto text-lg flex-wrap ;
+    }
+    .name{
+        @apply text-lg text-blue-600 flex-wrap;
+    }
+    .line{
+        @apply mt-12 text-xl flex-wrap;
+    }
+    .typer{
+        @apply text-xl mt-12 text-blue-600 flex-wrap;
+    }
+}
+@media (max-width:140px){
+    .image{
+        @apply hidden;
+    }
+    .buttondiv > button{
+        @apply w-20 text-xs text-justify;
+    }
+    .buttondiv > :link{
+        @apply w-20 text-xs text-justify;
+    }
+    .nameline{
+        @apply h-auto text-xs flex-wrap ;
+    }
+    .name{
+        @apply text-xs text-blue-600 flex-wrap;
+    }
+    .line{
+        @apply mt-12 text-xs flex-wrap;
+    }
+    .typer{
+        @apply text-xs mt-12 text-blue-600 flex-wrap;
+    }
+    .maindiv{
+        @apply flex flex-wrap;
+    }
+
+    
+}

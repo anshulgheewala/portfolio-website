@@ -1,0 +1,27 @@
+.mdiv{
+    @apply h-auto flex flex-col justify-center items-center w-full bg-blue-200 p-14 
+}
+.projects{
+    @apply text-3xl text-blue-600 ;
+}
+.done{
+    @apply text-4xl mt-6 text-black;
+}
+.comp_container{
+    @apply flex flex-row space-x-24 mt-14 ;
+}
+
+@media (max-width:560px) {
+
+    .done{
+        @apply text-2xl mt-6
+    }
+    
+}
+@media (max-width:410px) {
+
+    .done{
+        @apply text-2xl mt-6
+    }
+    
+}

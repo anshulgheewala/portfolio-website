@@ -1,0 +1,119 @@
+.main{
+    @apply flex h-16 w-full bg-gradient-to-r from-black to-blue-500  flex-row fixed
+}
+.list_container{
+    @apply flex flex-row text-white p-5 flex-wrap w-auto h-16 mr-20;
+
+   
+}
+.list_container li{
+    @apply hover:underline duration-300 ml-8 cursor-pointer;
+}
+.logo{
+    @apply text-2xl mt-1 h-12 w-56 
+}
+.cb{
+    @apply hidden
+}
+.container{
+    @apply flex justify-center mr-10 h-full items-center flex-row left-[-100%]
+}
+.label{
+    @apply hidden
+}
+.drawer{
+    @apply block absolute w-1/4 h-screen bg-blue-300 flex flex-col transition-all ease-in-out duration-700 p-4 shadow-2xl opacity-100
+}
+
+
+
+@media (max-width:912px) {
+
+/* .list_container{
+
+    @apply fixed w-full h-auto bg-red-600 top-6 flex flex-col justify-center items-center 
+} */
+/* .list_container li{
+    @apply mt-8;
+} */
+
+
+.list_container{
+    @apply fixed w-full h-auto bg-red-600 top-6 flex flex-col justify-center items-center hidden 
+}
+.label{
+    @apply text-3xl  block ;
+}
+.container{
+
+    @apply flex justify-center mr-10 h-full items-center flex-row 
+
+}
+
+.cb{
+
+   @apply hidden
+
+
+}
+.drawer >li{
+    @apply m-6 text-xl text-blue-600
+}    
+}
+
+@media (max-width:630px) {
+    .drawer >li{
+        @apply m-4 text-lg
+    }
+}
+@media (max-width:575px) {
+    .drawer{
+        @apply w-1/3
+    }
+    .drawer >li{
+        @apply m-4 text-lg
+    }
+}
+
+@media (max-width:423px) {
+    .drawer{
+        @apply w-1/3
+    }
+    .drawer >li{
+        @apply m-4 text-sm
+    }
+}
+@media (max-width:355px) {
+    .drawer{
+        @apply w-1/3 p-0 pl-2 pt-5
+    }
+    .drawer >li{
+        @apply  m-2 text-sm 
+    }
+}
+@media (max-width:301px) {
+    .drawer{
+        @apply w-1/2 p-0 pl-2 pt-5
+    }
+    .drawer >li{
+        @apply   text-sm
+    }
+    .logo{
+        @apply text-xl mt-1 h-12 w-24 
+    }
+}
+@media (max-width:181px) {
+    .drawer{
+        @apply w-1/2 p-0 pl-2 pt-5
+    }
+    .drawer >li{
+        @apply   text-xs m-0 mt-2 
+    }
+}
+
+@media (max-width:236px) {
+    .main{
+        @apply flex h-16 w-full bg-gradient-to-r from-black to-blue-500  flex-row relative
+    }
+
+}
